@@ -9,8 +9,8 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <br>
+  <!-- NAV BAR -->
     <header>
-      <!-- <input id="bar" type = "text" placeholder = "search"> -->
       <nav>
         <div class="search-bar">
           <input type="text" placeholder="Search..." />
@@ -18,8 +18,8 @@
         </div>
         <div class="navLinks">
           <ul>
-            <li><a href="aboutUs.html">News</a></li>
-            <li><a href="aboutUs.html">Github</a></li>
+            <li><a href="https://apnews.com">News</a></li>
+            <li><a href="https://github.com/alanNEF/WeatherWebApp/tree/main">Github</a></li>
             <li><a href="aboutUs.html">About</a></li>
             <li><button>Contact</button></li>
           </ul>
@@ -27,14 +27,15 @@
       </nav>
     </header>
     <br>
+    <!-- CURRENT WEATHER -->
     <div class="currentWeather">
       <div class="weatherContent">
-        <br><font size="5">Niskayuna</font> 
-        <br><font size="10">30&deg;</font></br>
+        <br><font size="5" class="city">Niskayuna</font> 
+        <br><font size="10" class="currentTemp">30&deg;</font></br>
         <font size="4">
           Clear
           <br>
-          High: 32&deg; Low: 24&deg;
+          High: <font class="tempMax"> 32&deg;</font>  Low: <font class="tempMin">24&deg;</font> 
         </font>
       </div>
       <div class = "weatherContent" style="margin-left: 60%; margin-top: 1%;">
@@ -42,24 +43,25 @@
       </div>
     </div>
     <br>
+    <!-- MORE WEATHER -->
     <div class="moreWeather">
       Weather Details:
-      <br><font size="7">31&deg;</font><br>Feels like
+      <br><font size="7" class="feelsLike">31&deg;</font><br>Feels like
       <table style="width: 80%;">
         <tr>
           <td class="dataCells">
             <span>High/Low</span> 
-            <span>35/25</span>
+            <span><font class="tempMax">35</font>/<font class="tempMin">25</font> </span>
           </td>
           <td class="dataCells">
             <span>Wind Speed</span> 
-            <span>8 mph</span>
+            <span><font class="windSpeed">3 kmh</font></span>
           </td>
         </tr>
         <tr>
           <td class="dataCells">
             <span>Humidity </span> 
-            <span>46%</span>
+            <span><font class="humidity">46%</font></span>
           </td>
           <td class="dataCells">
             <span>Dew Point</span> 
@@ -69,7 +71,7 @@
         <tr> 
           <td class="dataCells">
             <span>Pressure </span> 
-            <span>80cm</span>
+            <span><font class="pressure"></font></span>
           </td>
           <td class="dataCells">
             <span>UV index</span> 
@@ -79,7 +81,7 @@
         <tr>
           <td class="dataCells">
             <span>Visibility</span> 
-            <span>15 km</span>
+            <span><font class="visibility"></font></span>
           </td>
           <td class="dataCells">
             <span>Moon Phase</span> 
@@ -95,7 +97,7 @@
       <br><br>
       <div class="hourly" style="margin-left: 3.5%;">
         <font size="4"><b>Now</font>
-        <br><font size="6">30&deg;</font>
+        <br><font size="6" class="currentTemp">30&deg;</font>
         <br><img src = "images/icons8-night-100.png" style="width: 60%; filter: invert();">
         <br><font size="4">0%</b></font>
       </div>
@@ -131,7 +133,7 @@
       <br><br>
       <div class="hourly" style="margin-left: 3.5%;">
         <font size="4"><b>Today</font>
-        <br><font size="6">30&deg;</font>
+        <br><font size="6" class="currentTemp">30&deg;</font>
         <br><img src = "images/icons8-night-100.png" style="width: 60%; filter: invert();">
         <br><font size="4">0%</b></font>
       </div>
@@ -160,6 +162,6 @@
         <br><font size="4">0%</font>
       </div>
       <div class="card"></div>
-    <script src="index.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
