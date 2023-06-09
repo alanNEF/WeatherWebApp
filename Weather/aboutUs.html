@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graph Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/Weather/css/about.css">
+</head>
+<header>
+  <nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+      <button id="searchButton" type="submit">Search</button>
+    </div>
+    <div class="navLinks">
+      <ul>
+        <li><a href="https://apnews.com">News</a></li>
+        <li><a href="https://github.com/alanNEF/WeatherWebApp/tree/main">Github</a></li>
+        <li><a href="index.html">Weather</a></li>
+        <li><button>Contact</button></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<br>
+<body>
+  <p>
+    Global warming, also known as climate change, refers to the long-term increase in Earth's average surface temperature and alterations in weather patterns caused by human activities, primarily the burning of 
+    fossil fuels, deforestation, and industrial processes. The accumulation of greenhouse gases, such as carbon dioxide and methane, in the atmosphere leads to the trapping of heat, resulting in a range of adverse
+    effects on the environment, biodiversity, and socio-economic aspects. Rising temperatures and changing weather patterns disrupt ecosystems, impacting plant and animal species, leading to habitat loss, and 
+    increasing the risk of species extinction. It also contributes to the degradation of natural resources like water and soil, affecting food production and availability. Moreover, global warming intensifies 
+    extreme weather events, causing significant damage to infrastructure, agriculture, and human settlements, resulting in economic losses, displacement of communities, and heightened risks to human health and 
+    safety. Recognizing the global nature of climate change, addressing it requires international cooperation to reduce greenhouse gas emissions, develop clean energy sources, and build resilience. By taking 
+    action to mitigate global warming, we can strive towards a more equitable and sustainable future, promoting environmental stewardship and ensuring a livable planet for present and future generations. This 
+    website was created to not just let you know all the latest weather updates in your area but to raise awareness of how climate change is affecting you in your area.
+  </p>
+  <p>
+    Below is a graph of the max temperature in every year from 1950 to the predicted values of 2050:<br><br><br>
+    <canvas id="myChart"></canvas>
+  </p>
+  <p>
+    The percent difference from max temperature between 1950 and 2050(estimated): <font class="percentMax"> 0% </font>
+  </p>
+
+  <p>
+    Below is a graph of the minimum temperature in every year from 1950 to the predicted values of 2050:<br><br><br>
+    <canvas id="myChart2"></canvas>
+  </p>
+  <p>
+    The percent difference from minimum temperature between 1950 and 2050(estimated): <font class="percentMin"> 0% </font>
+  </p>
+
+  <script src="/Weather/js/about.js"></script>
+</body>
+</html>
